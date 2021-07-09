@@ -1,0 +1,210 @@
+:root {
+    --bg-body: #000000;
+    --bg-content: #00c8ff;
+    --bg-hover: #00d9ffcb;
+
+    --color-txt: #000000;
+
+    --nav-height: 70px;
+
+    --shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.analytic {
+    font-family: "Cairo", sans-serif;
+    position: relative;
+    background-color: var(--bg-body);
+    color: var(--color-txt);
+    text-shadow: 2px 2px 6px #00000046;
+    padding-top: calc(var(--nav-height) + 30px);
+    font-size: 16px;
+}
+
+.contbox {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.contentss {
+    padding: 15px;
+}
+
+
+
+
+.box1 {
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(0, 195, 255), rgb(255, 255, 255));
+    box-shadow: var(--shadow);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+.box-hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.box-hover:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 30px;
+}
+
+.box-header {
+    padding: 10px 0 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-txt);
+    position: relative;
+    text-transform: uppercase;
+}
+
+.country-select {
+    position: relative;
+}
+
+.country-select-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 700;
+    position: relative;
+}
+
+.country-select-list {
+    position: absolute;
+    top: calc(100% + 50px);
+    left: 0;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: scroll;
+    padding: 15px;
+    background-color: var(--bg-content);
+    z-index: 98;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.table-countries{
+    border-radius: 5px;
+}
+.country-select-list input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #e2e8f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.country-select-list.active {
+    top: calc(100% + 20px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.country-item {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.country-item:hover {
+    background-color: var(--bg-hover);
+}
+/* end country dropdown */
+
+/* count box */
+.count {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.count-icon {
+    --width: 70px;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    margin-right: 15px;
+}
+
+.count-info h5 {
+    font-size: 1.5rem;
+}
+
+.count-info span {
+    display: inherit;
+    margin-top: -14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.count-confirmed .count-icon {
+    background-color: #1900ff00;
+    color: rgb(4, 0, 255);
+}
+
+.count-confirmed .count-info h5 {
+    color: rgb(0, 47, 255);
+}
+
+.count-recovered .count-icon {
+    background-color: #c300ff00;
+    color: rgb(234, 0, 255);
+}
+
+.count-recovered .count-info h5 {
+    color: rgb(255, 0, 255);
+}
+
+.count-death .count-icon {
+    background-color: #ff000000;
+    color: #ff0000;
+}
+
+.count-death .count-info h5 {
+    color: #ff0000;
+}
+.table-countries{
+    background-image: linear-gradient(to bottom right, rgb(0, 195, 255), rgb(0, 0, 0));
+    color: #ffffff;
+    text-shadow: 2px 2px 6px #000000;
+}
+.table-responsive h1{
+    color: #ffffff;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-size: 12px;
+    }
+}

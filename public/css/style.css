@@ -1,0 +1,87 @@
+.names{
+  margin-left: auto;
+}
+.banner-image{
+  background-image: url('/gif/star.gif');
+  background-size: cover;
+}
+.log h3{
+  color: aqua;
+  text-shadow: 2px 2px 4px #07dcf8ad;
+}
+.iq{
+  color: aqua;
+  text-align: center;
+}
+.iq h2{
+  color: rgb(0, 217, 255);
+  text-shadow: 2px 2px 6px #09ffff;
+  
+}
+.car{
+  border-radius: 25px;
+  padding: 2px;
+  
+}
+.bus{
+  border-radius: 20px;
+  box-shadow:
+    inset 0 0 60px rgb(0, 0, 0),
+    inset 0px 0 60px #000000,
+    inset -20px 0 60px #00d9ff,
+    inset 0px 0 100px rgb(0, 0, 0),
+    inset -20px 0 100px #00d9ff,
+    0 0 10px #000000,
+    0px 0 10px #00f7ff,
+    0px 0 10px #00d9ff;
+}
+.tes{
+  border-radius: 25px;
+}
+.ser{
+  text-align: center;
+  padding: 25px;
+}
+.con{
+  background-color: #000000;
+}
+.enpin{
+  color: #00d9ff;
+}
+#searchbtn{
+  color: rgb(255, 255, 255);
+}
+#searchbtn1{
+  color: rgb(255, 255, 255);
+}
+.align td{
+  text-align: center;
+}
+.userprofile{
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  
+}
+.profilecard{
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+  color: azure;
+  box-shadow:
+    inset 0 0 60px rgb(0, 0, 0),
+    inset 0px 0 60px #000000,
+    inset -20px 0 60px #00d9ff,
+    inset 0px 0 100px rgb(0, 0, 0),
+    inset -20px 0 100px #00d9ff,
+    0 0 10px #000000,
+    0px 0 10px #00f7ff,
+    0px 0 10px #00d9ff;
+}
+.profilecard hr{
+  color: #00d9ff;
+}
+.tes{
+  margin: 2%;
+}
+.homenav{
+  background-color: #000000;
+}
