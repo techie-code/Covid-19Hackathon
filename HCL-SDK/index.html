@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>HealthCare Locator SDK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#16161d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+
+    <link rel="apple-touch-icon" href="/assets/icon/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      html {
+        background: rgb(0, 0, 0);
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        border-radius: 25px;
+      }
+
+      hcl-sdk {
+        --hcl-color-secondary: #000000;
+        --hcl-color-primary: #02e6f7;
+        --hcl-color-list_bkg:#000000;
+        --hcl-color-marker:#00f7ff;
+        --hcl-color-marker_selected:#00f7ff;
+        --hcl-color-button_bkg:#ffffff;
+        --hcl-color-view_bkg:#00f7ff;
+        --hcl-color-card_border:#00f7ff;
+      }
+      .hcl-sdk-wrapper.desktop {
+        width: 100%;
+        height: 100vh;
+        border-radius: 25px;
+      }
+      .hcl-sdk-wrapper.desktop {
+        width: 100%;
+        height: 100vh;
+        border-radius: 25px;
+      }
+      .hcl-sdk-wrapper.mobile,
+      .hcl-sdk-wrapper.tablet {
+        margin: 20px auto;
+        border-radius: 25px;
+      }
+      .hcl-sdk-wrapper.mobile {
+        width: 375px;
+        height: 667px;
+        border-radius: 25px;
+      }
+      .hcl-sdk-wrapper.tablet {
+        width: 1024px;
+        height: 768px;
+        border-radius: 25px;
+      }
+
+      @media screen{
+        hcl-sdk-dev-settings {
+          display: none;
+        }
+        .hcl-sdk-wrapper.mobile,
+        .hcl-sdk-wrapper.tablet {
+          margin: 0;
+          width: 100%;
+          height: 100vh;
+          border-radius: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="hcl-sdk-wrapper">
+
+       <hcl-sdk />
+
+    </div>
+    
+    <hcl-sdk-dev-settings />
+    
+    <script>
+      var hclSdkEl = document.querySelector('hcl-sdk');
+
+
+// Initialize Hcl SDK
+
+function getSettingsFromLocal() {
+  const settingsStr = localStorage.getItem(`__hcl-sdk-dev-settings-fields`);
+  if (settingsStr) {
+    try {
+      return JSON.parse(settingsStr);
+    } catch (err) { }
+  }
+  return {
+    apiKey: '',
+    showSuggestModification: false
+  };
+}
+
+const config = {
+  ...getSettingsFromLocal()
+};
+
+var matches = window.location.hash.match(/sp=([A-Z0-9.]+)/);
+if (matches) {
+  var specialtyCode = matches[1];
+  var specialtyLabel = specialtyLabelByCode[specialtyCode];
+  if (specialtyLabel) {
+    config.entry = {
+      screenName: 'searchNearMe',
+      specialtyCode
+    }
+  }
+}
+
+console.log(config)
+
+customElements.whenDefined('hcl-sdk').then(function() {
+  hclSdkEl.init(config);
+})
+
+
+
+    </script>
+    <script src=https://static.healthcarelocator.com/v1/hcl-sdk-web-ui/hcl-sdk.js></script>
+
+    <script src=https://static.healthcarelocator.com/v1/hcl-sdk-api/hcl-sdk-api.js></script>
+
+  </body>
+</html>

@@ -1,0 +1,46 @@
+
+
+.dev-settings,
+.dev-settings * {
+  box-sizing: border-box;
+}
+
+.dev-settings {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background: #020202a3;
+  color: white;
+  z-index: 0;
+  grid-gap: 10px;
+  display: grid;
+  z-index: 99999;
+  width: 250px;
+
+  &.collapsed {
+    right: -250px;
+  }
+
+  .setting {
+    display: flex;
+
+    label, select {
+      flex: 1;
+    }
+  }
+}
+
+.dev-settings-collapse-btn {
+  cursor: default;
+  position: absolute;
+  left: -22px;
+  background: #020202a3;
+  bottom: 2px;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
