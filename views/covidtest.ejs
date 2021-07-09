@@ -1,0 +1,67 @@
+<div class="d-flex" id="wrapper">
+
+    <div class="bg-darker" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold">Heal the World</div>
+        <div class="list-group list-group-flush my-3">
+            <a href="/dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold "><i
+                    class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a href="/analytics" class="list-group-item list-group-item-action bg-transparent second-text fw-bold  "><i
+                    class="fas fa-chart-line me-2"></i>COVID-19 Analytics</a>
+            <a href="/covidtest" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active">
+                <i class="fas fa-vial me-2"></i>COVID-19 Self Test</a>
+            <a href="/findnearhospital" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-map-marker-alt me-2"></i>Find Near Hospitals</a>        
+            <a href="/vaccination" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="fas fa-syringe me-2"></i>Vaccination Center</a>
+            <a href="/profile" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="fas fa-id-card me-2"></i>Profile</a>
+            <a href="/logout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                    class="fas fa-power-off me-2"></i>Logout</a>
+        </div>
+    </div>
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navtit navbar-expand-lg py-4 px-4">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                <h2 class="titlenav">COVID-19 Self Test</h2>
+            </div>
+        </nav>
+
+  <div class="main-content" id="panel">
+    <div class="quiz-container">
+      <div class="card bg-transparent">
+        <div class="iq py-4 px-4"><h2>COVID-19 Self Assessment</h2></div>
+      </div>
+        
+        <div class="card card-stats tes">
+            <div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span class="option1"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="2" />
+            <span class="option2"></span>
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="3" />
+            <span class="option3"></span>
+        </label>
+
+        <div class="controls">
+            <button class="previous " >Previous</button>
+            <button class="next " >Next</button>
+        </div>
+    </div>
+</div>
+
+    
+<div class="result">
+
+</div>    
+
+</div>
+</div>
+</div>
+

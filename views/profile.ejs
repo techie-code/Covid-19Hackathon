@@ -1,0 +1,128 @@
+<div class="d-flex" id="wrapper">
+
+	<div class="bg-darker" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold">Heal the World</div>
+        <div class="list-group list-group-flush my-3">
+            <a href="/dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold "><i
+                    class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a href="/analytics" class="list-group-item list-group-item-action bg-transparent second-text fw-bold  "><i
+                    class="fas fa-chart-line me-2"></i>COVID-19 Analytics</a>
+            <a href="/covidtest" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="fas fa-vial me-2"></i>COVID-19 Self Test</a>
+            <a href="/findnearhospital" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-map-marker-alt me-2"></i>Find Near Hospitals</a>        
+            <a href="/vaccination" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="fas fa-syringe me-2"></i>Vaccination Center</a>
+            <a href="/profile" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active">
+                <i class="fas fa-id-card me-2"></i>Profile</a>
+            <a href="/logout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                    class="fas fa-power-off me-2"></i>Logout</a>
+        </div>
+    </div>
+
+	<div id="page-content-wrapper">
+		<nav class="navbar fixed navtit navbar-expand-lg py-4 px-4">
+			<div class="d-flex align-items-center">
+				<i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+				<h2 class="titlenav">Profile</h2>
+			</div>
+		</nav>
+
+	<div class="main-content" id="panel">
+	<div class="userprofile">
+	 <div class="row">
+		<div class="col-md-12">
+			<div class="card profilecard mb-3">
+			  <div class="card-body">
+				<div class="row">
+				  <div class="col-sm-3">
+					<h6 class="mb-0">Full Name</h6>
+				  </div>
+				  <div class="col-sm-9 text-info">
+					<%= name %>
+				  </div>
+				</div>
+				<hr>
+				<div class="row">
+				  <div class="col-sm-3">
+					<h6 class="mb-0">Date of Birth</h6>
+				  </div>
+				  <div class="col-sm-9 text-info">
+					<%= dob %>
+				  </div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+					  <h6 class="mb-0">Gender</h6>
+					</div>
+					<div class="col-sm-9 text-info">
+						<%= gender %>
+					</div>
+				  </div>
+				  <hr>
+				<div class="row">
+				  <div class="col-sm-3">
+					<h6 class="mb-0">Country</h6>
+				  </div>
+				  <div class="col-sm-9 text-info">
+				   <%= country %>
+				  </div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-3">
+					  <h6 class="mb-0">State</h6>
+					</div>
+					<div class="col-sm-9 text-info">
+					 <%= state %>
+					</div>
+				  </div>
+				  <hr>
+				  <div class="row">
+					<div class="col-sm-3">
+					  <h6 class="mb-0">City</h6>
+					</div>
+					<div class="col-sm-9 text-info">
+					 <%= city %>
+					</div>
+				  </div>
+				  <hr>
+				  <div class="row">
+					<div class="col-sm-3">
+					  <h6 class="mb-0">Address</h6>
+					</div>
+					<div class="col-sm-9 text-info">
+					 <%= address %>
+					</div>
+				  </div>
+				  <hr>
+				  <div class="row">
+					<div class="col-sm-3">
+					  <h6 class="mb-0">Mobile Number</h6>
+					</div>
+					<div class="col-sm-9 text-info">
+					 <%= mobile %>
+					</div>
+				  </div>
+				  <hr>
+				<div class="row">
+				  <div class="col-sm-3">
+					<h6 class="mb-0">National ID</h6>
+				  </div>
+				  <div class="col-sm-9 text-info">
+					<%= nationalid %>
+				  </div>
+				</div>
+				<hr>
+
+	 </div>
+	  
+	  </div>
+	
+   </div>
+   </div>
+</div>
+</div>
+</div>
+</div>

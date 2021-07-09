@@ -1,0 +1,72 @@
+
+<div class="d-flex" id="wrapper">
+
+    <div class="bg-darker" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold">Heal the World</div>
+        <div class="list-group list-group-flush my-3">
+            <a href="/dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold "><i
+                    class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a href="/analytics" class="list-group-item list-group-item-action bg-transparent second-text fw-bold  "><i
+                    class="fas fa-chart-line me-2"></i>COVID-19 Analytics</a>
+            <a href="/covidtest" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="fas fa-vial me-2"></i>COVID-19 Self Test</a>
+            <a href="/findnearhospital" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-map-marker-alt me-2"></i>Find Near Hospitals</a>        
+            <a href="/vaccination" class="list-group-item list-group-item-action bg-transparent second-text fw-bold  active">
+                <i class="fas fa-syringe me-2"></i>Vaccination Center</a>
+            <a href="/profile" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                <i class="fas fa-id-card me-2"></i>Profile</a>
+            <a href="/logout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                    class="fas fa-power-off me-2"></i>Logout</a>
+        </div>
+    </div>
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navtit navbar-expand-lg py-4 px-4">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                <h2 class="titlenav">Vaccination Center</h2>
+            </div>
+        </nav>
+
+  <div class="main-content" id="panel">
+ 
+
+    <div class="card con">
+        <div class="container con ">
+            <div class="card con ">
+              <div class="iq con"><h2>Heal the world</h2>
+                <h2>Check the vaccine slots in India</h2></div>
+            </div>
+
+            <div class="form-group enpin">
+                <label for="pin">Enter the pin:</label>
+                <input type="number" maxlength="6" class="form-control" id="pin" placeholder="Enter pin" name="pin">
+            </div>
+            <div class="container ser">  
+              <button id="searchbtn" class="btn btn-info">Search</button>
+            </div>
+
+            <div class="card">
+            <table class="table" id="session">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pin code</th>
+                        <th>Date</th>
+                        <th>Age 18+</th>
+                        <th>Age 45+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+  
+    </div>
+    
+    
+</div>
+</div>

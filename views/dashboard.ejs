@@ -1,0 +1,192 @@
+<div class="d-flex" id="wrapper">
+
+  <div class="bg-darker" id="sidebar-wrapper">
+    <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold">Heal the World</div>
+    <div class="list-group list-group-flush my-3">
+        <a href="/dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active "><i
+                class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+        <a href="/analytics" class="list-group-item list-group-item-action bg-transparent second-text fw-bold "><i
+                class="fas fa-chart-line me-2"></i>COVID-19 Analytics</a>
+        <a href="/covidtest" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <i class="fas fa-vial me-2"></i>COVID-19 Self Test</a>
+        <a href="/findnearhospital" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                class="fas fa-map-marker-alt me-2"></i>Find Near Hospitals</a>        
+        <a href="/vaccination" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <i class="fas fa-syringe me-2"></i>Vaccination Center</a>
+        <a href="/profile" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <i class="fas fa-id-card me-2"></i>Profile</a>
+        <a href="/logout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                class="fas fa-power-off me-2"></i>Logout</a>
+    </div>
+</div>
+  
+
+  <div id="page-content-wrapper">
+      <nav class="navbar fixed navtit navbar-expand-lg py-4 px-4">
+          <div class="d-flex align-items-center">
+              <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+              <h2 class="titlenav">Dashboard</h2>
+          </div>
+      </nav>
+ 
+  <div class="main-content" id="panel">
+    <div class="card con px-4 py-4 ">
+      <div class="iq con welintro"><div class="btn welcome"><h2 >Welcome <%= name %></h2></div>
+        <h3 class="welintro">In this app you can check the covid-19 analytics , vaccine status and your nearby hospital</h3></div>
+      </div>
+      <div class="container row bg-transparent rowmargin">
+        <div class="card into col-sm-12 col-md-6 col-lg-4">
+          <img class="card-img-top" src="./img/analytics.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title topics">COVID-19 Analytics</h5>
+            <p class="card-text description">Helps you to track and analyze the COVID-19 Cases in the world</p>
+          </div>
+          <div class="clc"><a href="/analytics" class="btn btn-info button1">Track</a></div>
+        </div>
+        <div class="card  into col-sm-12 col-md-6 col-lg-4">
+          <img class="card-img-top" src="./img/vaccine.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title topics">COVID-19 Vaccine Tracker</h5>
+            <p class="card-text description">To find the vaccination slots</p>
+            
+          </div>
+          <div class="clc"><a href="/vaccination" class="btn btn-info button1">Track</a></div>
+        </div>
+        <div class="card  into col-sm-12 col-md-6 col-lg-4">
+          <img class="card-img-top" src="./img/doctor.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title topics">Find Near Hospital</h5>
+            <p class="card-text description">Helps you to find the hospital and specialities</p>
+            
+          </div>
+          <div class="clc"><a href="/findnearhospital" class="btn btn-info button1">Track</a></div>
+        </div>
+      </div>
+    
+    <div class="card con px-2 py-2 ">
+      <div class="iq con tip1"><h1>Here some of the Tips </h1>
+      </div>
+    </div>
+    <div class="card con">
+    <div class="container cont row rowmargin ">
+      <div class="card card11 con col-sm-12 col-md-6 col-lg-3">
+        <div class="face face1">
+          <div class="content">
+            <i class=" ic far fa-hand-paper"></i>           
+            <h3>Tip 1</h3>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p class="pre iq"> Clean your hands often.</p>
+          </div>
+        </div>
+     </div>
+     
+     <div class="card card11 con col-sm-12 col-md-6 col-lg-3">
+        <div class="face face1">
+          <div class="content">
+            <i class=" ic fas fa-pump-medical"></i> <h3>Tip 2</h3>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p class="pre">Use soap and water, or an alcohol-based hand sanitizer.</p>
+          </div>
+        </div>
+     </div>
+     
+     
+     <div class="card card11 con  col-sm-12 col-md-6 col-lg-3">
+        <div class="face face1">
+          <div class="content">
+            <i class="ic fas fa-people-arrows"></i>
+             <h3>Tip 3</h3>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p class="pre">Maintain a safe distance from anyone who is coughing or sneezing</p>
+          </div>
+        </div>
+     </div>  
+     <div class="card card11 con col-sm-12 col-md-6 col-lg-3">
+      <div class="face face1">
+        <div class="content">
+          <i class="ic fas fa-head-side-mask"></i>           
+          <h3>Tip 4</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p class="pre"> Wear a mask when you go out.</p>
+        </div>
+      </div>
+   </div>
+   </div>
+<div class="container cont row rowmargin">
+
+   
+   <div class="card card11 con col-sm-12 col-md-6 col-lg-3">
+      <div class="face face1">
+        <div class="content">
+          <i class="ic fas fa-handshake-slash"></i> <h3>Tip 5</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p class="pre">Don’t touch your eyes, nose or mouth.</p>
+        </div>
+      </div>
+   </div>
+   
+   
+   <div class="card card11 con  col-sm-12 col-md-6 col-lg-3">
+      <div class="face face1">
+        <div class="content">
+          <i class="ic fas fa-head-side-cough-slash"></i>
+           <h3>Tip 6</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p class="pre">Cover your nose and mouth when you cough or sneeze.</p>
+        </div>
+      </div>
+   </div>
+  <div class="card card11 con col-sm-12 col-md-6 col-lg-3">
+    <div class="face face1">
+      <div class="content">
+        <i class="ic fas fa-house-user"></i>           
+        <h3>Tip 7</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p class="pre"> Stay home if you feel unwell.</p>
+      </div>
+    </div>
+ </div>
+ 
+ <div class="card card11 con col-sm-12 col-md-6 col-lg-3">
+    <div class="face face1">
+      <div class="content">
+        <i class="ic fas fa-hospital-user"></i><h3>Tip 8</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p class="pre">If you have a fever, cough and difficulty breathing consult a doctor.</p>
+      </div>
+    </div>
+ </div>
+</div>
+   </div>
+    
+    </div>
+  
+ </div>
+ </div>
+
+
+    
